@@ -8,7 +8,7 @@ const Login = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') !== null) {
-      window.location.replace('http://localhost:3000/game');
+      window.location.replace('https://main.drvznpngbg4y4.amplifyapp.com/login/game');
     } else {
       setLoading(false);
     }
@@ -35,7 +35,7 @@ const Login = () => {
         if (data.key) {
           localStorage.clear();
           localStorage.setItem('token', data.key);
-          window.location.replace('http://localhost:3000/game');
+          window.location.replace('https://main.drvznpngbg4y4.amplifyapp.com/game');
         } else {
           setEmail('');
           setPassword('');
