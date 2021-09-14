@@ -24,7 +24,7 @@ const Login = () => {
 
     axios({
       method: 'post',
-      url: 'http://djminesbackend.respuestadigital.com.ar/api/v1/users/auth/login/',
+      url: 'https://djminesbackend.respuestadigital.com.ar/api/v1/users/auth/login/',
       headers: {
         'Content-Type':'application/json'
       },
